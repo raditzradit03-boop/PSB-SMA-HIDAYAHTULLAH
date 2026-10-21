@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak & Pendaftaran | PSB SMA Syarif Hidayahtullah</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="Home.html"><span class="brand-mark">P</span><span>PSB <small>SMA SYARIF HIDAYAH TULLAH</small></span></a>
+    <nav class="nav"><a href="Home.html">Home</a><a href="About.html">About</a><a class="active" href="Contact.html">Contact</a><a href="Gallery.html">Gallery</a></nav>
+  </header>
+  <main>
+    <section class="page-hero"><span class="eyebrow">KONTAK & PENDAFTARAN</span><h1>Mulai pendaftaranmu</h1><p>Lengkapi form contoh di bawah ini. Data tidak dikirim ke server; form ini hanya demonstrasi tampilan untuk tugas HTML.</p></section>
+    <section class="section contact-layout">
+      <aside class="contact-info"><span class="eyebrow">BUTUH BANTUAN?</span><h2>Panitia PSB</h2><p>Hubungi panitia sekolah untuk mendapatkan informasi lebih lanjut tentang persyaratan dan jadwal pendaftaran.</p>
+        <div class="contact-item"><span class="contact-symbol">✉</span><div><small>Email</small><strong>psb@cendekia.sch.id</strong></div></div>
+        <div class="contact-item"><span class="contact-symbol">☎</span><div><small>Telepon</small><strong>(021) 555-0101</strong></div></div>
+        <div class="contact-item"><span class="contact-symbol">⌖</span><div><small>Alamat</small><strong>Jl. Pendidikan No. 10, Indonesia</strong></div></div>
+        <p class="small-note">Informasi kontak di atas adalah contoh fiktif. Ganti dengan data sekolah yang sesuai jika diperlukan.</p>
+      </aside>
+      <section class="form-card" id="form-pendaftaran"><div class="form-heading"><span class="eyebrow">FORMULIR</span><h2>Form Pendaftaran Siswa</h2><p>Kolom bertanda * wajib diisi.</p></div>
+        <form onsubmit="event.preventDefault(); document.getElementById('hasil-form').textContent='Terima kasih, ' + document.getElementById('nama').value + '. Data contoh berhasil divalidasi di browser (belum disimpan atau dikirim).';">
+          <div class="form-grid">
+            <div class="field full"><label for="nama">Nama lengkap *</label><input id="nama" name="nama" type="text" placeholder="Masukkan nama lengkap" required></div>
+            <div class="field"><label for="nisn">NISN *</label><input id="nisn" name="nisn" type="text" inputmode="numeric" placeholder="Nomor induk siswa" required></div>
+            <div class="field"><label for="tanggal">Tanggal lahir *</label><input id="tanggal" name="tanggal" type="date" required></div>
+            <div class="field"><label for="asal">Asal sekolah *</label><input id="asal" name="asal" type="text" placeholder="Nama SMP/MTs" required></div>
+            <div class="field"><label for="jurusan">Jurusan pilihan *</label><select id="jurusan" name="jurusan" required><option value="">Pilih jurusan</option><option>IPA</option><option>IPS</option><option>Bahasa</option></select></div>
+            <div class="field full"><label for="alamat">Alamat</label><textarea id="alamat" name="alamat" rows="3" placeholder="Masukkan alamat tempat tinggal"></textarea></div>
+          </div>
+          <button class="button primary submit-button" type="submit">Kirim Form Contoh <span>→</span></button>
+          <p id="hasil-form" class="form-result" role="status"></p>
+        </form>
+      </section>
+    </section>
+  </main>
+  <footer class="footer"><span>© 2026 PSB SMA Syarif Hidayahtullah — Project Web</span><span><a href="Home.html">Kembali ke Home ↑</a></span></footer>
+</body>
+</html>
